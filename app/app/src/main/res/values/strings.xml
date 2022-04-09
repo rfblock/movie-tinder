@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">application</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="msg_here_is_where_y">Here is where you write what  this movie/tv show is about. you can click here for more info</string>
+<string name="lbl_more_info">More Info</string>
+<string name="msg_suscipit_tellus">Suscipit tellus mauris a diam. Massa tincidunt dui ut ornare lectus sit amet est placerat. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus.</string>
+<string name="msg_spider_man_fa">SPIDER MAN : FAR FROM HOME</string>
+<string name="lbl_recomendations">Recomendations</string>
+<string name="msg_this_contact_has_no_phone_nu">This contact has no phone number</string>
+</resources>
