@@ -24,9 +24,6 @@ def get_images(id):
 def top_250_movies():
     return __call_api('top250movies', '')['items']
 
-def get_description(id):
-    pass
-
 def get_ratings(id):
     return __call_api('ratings', id)
 
@@ -42,16 +39,16 @@ def ratings_from_id(id):
     )
 
 def movie_from_id(id):
-    title = get_title(id)['title']
+    title = get_title(id)
     thumbnail = get_images(id)['items'][0]['image']
-    description = get_description(id)
     trailer = youtube_trailer(id)
     return Movie(
         id=id,
-        title=title,
+        title=title['fullTitle'],
         thumbnail=thumbnail,
-        description=description,
-        length=0,
+        description=title['plot'],
+        genres=title['genres'].split(', '),
+        length=title['runtimeStr'],
         youtube_trailer=trailer,
         ratings=vars(ratings_from_id(id))
     )
